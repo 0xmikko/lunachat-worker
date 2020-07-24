@@ -1,0 +1,19 @@
+{
+  "federated_only": true,
+  "checksum_address": "0xa57EE035A252208c17E5D7D29dEc6DbC8A01F282",
+  "keyring_root": "/Users/mikhail/Coding/Lunachat/worker/keys/bob/config_root/keyring",
+  "domains": [
+    "unknown"
+  ],
+  "learn_on_same_thread": true,
+  "abort_on_learning_error": false,
+  "start_learning_now": true,
+  "save_metadata": true,
+  "node_storage": {
+    "storage_type": "local",
+    "storage_root": "/Users/mikhail/Coding/Lunachat/worker/keys/bob/config_root/known_nodes",
+    "metadata_dir": "/Users/mikhail/Coding/Lunachat/worker/keys/bob/config_root/known_nodes/metadata",
+    "certificates_dir": "/Users/mikhail/Coding/Lunachat/worker/keys/bob/config_root/known_nodes/certificates"
+  },
+  "version": 1
+}

@@ -1,0 +1,21 @@
+{
+  "federated_only": true,
+  "checksum_address": "0xF7c1E658e4EaEC5Fdca718fAb400B13A97533c9a",
+  "keyring_root": "/Users/mikhail/Coding/Lunachat/worker/keys/alice/config_root/keyring",
+  "domains": [
+    "unknown"
+  ],
+  "learn_on_same_thread": true,
+  "abort_on_learning_error": false,
+  "start_learning_now": false,
+  "save_metadata": true,
+  "node_storage": {
+    "storage_type": "local",
+    "storage_root": "/Users/mikhail/Coding/Lunachat/worker/keys/alice/config_root/known_nodes",
+    "metadata_dir": "/Users/mikhail/Coding/Lunachat/worker/keys/alice/config_root/known_nodes/metadata",
+    "certificates_dir": "/Users/mikhail/Coding/Lunachat/worker/keys/alice/config_root/known_nodes/certificates"
+  },
+  "m": 2,
+  "n": 3,
+  "version": 1
+}
