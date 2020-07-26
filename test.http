@@ -1,0 +1,38 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST http://localhost:5000/encrypt
+Content-Type: application/json
+
+
+{
+    "data": "hello, world"
+}
+
+###
+
+
+POST  http://localhost:5000/decrypt
+Content-Type: application/json
+
+
+{
+    "data": "80037d710028580c000000616c6963655f7075626b65797101432103f0598c92a27bd2d116710a3f62ba97e35ff6264d3f946f1f39003e1332bff4cf71025812000000646174615f736f757263655f7075626b65797103432103de33537990cf532fbdd236a0688d2aa002cc4019a58449335d51d23539640d83710458030000006b6974710543f802266e18cf6d009901a8c7088a05f310c820743cc3d77656a45acf0f2ef6bc9749024158914f220c4f5ae43156db2e6f0030cdc0db70e52b068c0aca2947789df6f5c1b5357bf74e22488762e98b69c1347a79a4c2497ec669b03e7eb7605de7b80203de33537990cf532fbdd236a0688d2aa002cc4019a58449335d51d23539640d8300000071ecc247d24f55e10b5a778fa155bd6c2b9bb4437e555d73a286db087fcbda11fde5305db9db4dba47b2ac9c9bf5efd65bb4e60032cff14ef279e4e44d053923f85032d8b66f2f2a36e51db4f79001655e5028fa22d4dca1bb57ff08ccec773179e9d2d14d986921022076c7b9c7d4a079fc710658050000006c6162656c7107432077c262a14c7ea16e93c646628e837d012356efbb9c7755deb5f9195137f338ef7108580d000000706f6c6963795f7075626b657971094321028f61930b29ff0aefb4507d063440b9a0faeb2026866cfef50a9f55fdfd4290b8710a752e"
+}
+
+###
+
+GET http://localhost:5000/reader
+
+###
+
+POST http://localhost:5000/grant
+Content-Type: application/json
+
+{"signing_power": "029a1e003fd279ed44012cc02616b03d47471b4f51390d37093bdbf4800298137b", "decrypt_power": "02b3c608afaa56d2cfcb646991ed1cabd8f94ea0296f7c7f08731de90f469e1b08"}
+
+###
