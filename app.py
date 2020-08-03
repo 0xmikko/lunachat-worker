@@ -55,7 +55,11 @@ def grant_access():
     print(data)
     p_reader = ChannelReaderPublic(signing_power_bytes=bytes.fromhex(data['signing_power']),
                                  decrypt_power_bytes=bytes.fromhex(data['decrypt_power']))
-    manager.grant(p_reader, channel)
+
+    try:
+        manager.grant(p_reader, channel)
+    except KeyError:
+        return "ok"
     return "ok"
 
 
